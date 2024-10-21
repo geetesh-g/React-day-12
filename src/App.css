@@ -1,38 +1,131 @@
 .App {
-  text-align: center;
+	text-align: center;
+	font-family: sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	background-color: white;
+	padding: 1rem;
+	position: fixed;
+	top: 0;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.navbar a {
+	text-decoration: none;
+	font-size: large;
+	font-weight: 600;
+	color: rgb(6, 6, 6);
+}
+.user-list {
+	width: 60%;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	margin: auto;
+	margin-top: 70px;
+	margin-bottom: 50px;
+	padding: 40px;
+	gap: 20px;
+	place-items: center;
+	box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+	border-radius: 10px;
+	border: 2px solid transparent;
+}
+.common-pages {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 100px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card {
+	width: 100%;
+	padding: 8px 0px;
+	box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+		rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+	border-radius: 15px;
+	border: 1px solid orange;
+}
+.img {
+	border-radius: 50%;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.name {
+	font-size: medium;
+	font-family: "Courier New", Courier, monospace;
 }
 
-.App-link {
-  color: #61dafb;
+.more-info {
+	text-decoration: none;
+	font-weight: 500;
+	padding: 3px 2px;
+	border: 1px solid purple;
+	border-radius: 5px;
+	cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.user-detail {
+	width: 70%;
+	margin: auto;
+	margin-top: 70px;
+	padding: 20px 5px;
+	box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+		rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+	border-radius: 20px;
+}
+.user-detail img {
+	border-radius: 50%;
+}
+
+.user-detail h5 {
+	font-size: large;
+	font-family: monospace;
+}
+
+.go-to-home {
+	padding: 8px 12px;
+	background-color: rgb(30, 150, 200);
+	color: aliceblue;
+	font-weight: 600;
+	border: none;
+	box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+		rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+	border-radius: 18px;
+	cursor: pointer;
+}
+
+.go-to-home:hover {
+	background-color: rgb(13, 133, 184);
+	font-size: 16px;
+}
+.pagination {
+	display: flex;
+	width: 200px;
+	margin: auto;
+	justify-content: space-around;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 6px 0px;
+}
+.pagination button {
+	padding: 4px 8px;
+	background-color: transparent;
+	border: none;
+	color: blue;
+	border-radius: 5px;
+	box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+		rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+	cursor: pointer;
+}
+
+.pagination button:disabled {
+	color: rgb(77, 77, 77);
+	background-color: rgb(220, 220, 220);
+	border-radius: 5px;
+	cursor: not-allowed;
 }
